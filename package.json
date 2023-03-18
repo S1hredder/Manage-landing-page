@@ -1,0 +1,23 @@
+{
+  "name": "mangae-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/S1hredder/Manage-landing-page.git"
+  },
+  "author": "Jakub Stępnik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/S1hredder/Manage-landing-page/issues"
+  },
+  "homepage": "https://github.com/S1hredder/Manage-landing-page#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}
