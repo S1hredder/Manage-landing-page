@@ -12,14 +12,16 @@ module.exports = {
         100: "hsl(12, 88%, 59%)",
         200: "hsl(13, 100%, 96%)",
         300: "hsl(233, 12%, 13%)",
-        grey: {
-          100: "hsl(0, 0%, 98%)",
-        },
       },
+      grey: {
+        100: "hsl(0, 0%, 98%)",
+      },
+      transparent: "transparent",
     },
     fontFamily: {
       sans: ['"Be Vietnam Pro"'],
     },
+    extend: {},
   },
   plugins: [],
 };
