@@ -27,9 +27,13 @@
     <header>
       <nav class="shadow-gradient" data-shadow="false">
         <div class="container flex justify-between">
-          <img class="object-scale-down" src="/src/images/logo.svg" alt="" />
+          <img
+            class="object-scale-down max-w-xs"
+            src="/src/images/logo.svg"
+            alt=""
+          />
           <ul
-            class="md:flex flex-col md:flex-row items-center text-base text-blue-200 font-bold py-6 mt-10 bg-grey-100 md:bg-transparent fixed md:static left-0 right-0 m-5 md:m-0 hidden rounded-md"
+            class="md:flex flex-col md:flex-row items-center text-blue-200 font-bold py-6 mt-10 bg-grey-100 md:bg-transparent fixed md:static left-0 right-0 m-5 md:m-0 hidden rounded-md nav-text-clamp"
             id="nav"
           >
             <li class="p-3"><a href="#">Pricing</a></li>
@@ -38,7 +42,7 @@
             <li class="p-3"><a href="#">Careers</a></li>
             <li class="p-3"><a href="#">Community</a></li>
           </ul>
-          <button class="hidden md:inline">Get Started</button>
+          <button class="hidden md:flex button">Get Started</button>
           <img
             src="/src/images/icon-hamburger.svg"
             class="object-scale-down inline md:hidden z-100 fixed right-5"

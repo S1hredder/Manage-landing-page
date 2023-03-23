@@ -573,6 +573,23 @@ video {
   position: fixed;
 }
 
+.button {
+  display: flex;
+  align-self: center;
+  border-radius: 2em;
+  /* padding: 0.65em; */
+  padding-top: clamp(0.75em,1vw,1.5em );
+  padding-right:clamp(0.65em,2vw,4em) ;
+  padding-bottom:clamp(0.75em,1vw,1.5em) ;
+  padding-left:clamp(0.65em,2vw,4em);
+  background-color:hsl(12, 88%, 59%);
+  color:white;
+}
+
+.nav-text-clamp {
+  font-size: clamp(0.85rem, 1.4vw, 1rem);
+}
+
 .fixed {
   position: fixed;
 }
@@ -607,6 +624,10 @@ video {
 
 .hidden {
   display: none;
+}
+
+.max-w-xs {
+  max-width: 20rem;
 }
 
 .flex-col {
@@ -644,11 +665,6 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -671,10 +687,6 @@ video {
 
   .md\:m-0 {
     margin: 0px;
-  }
-
-  .md\:inline {
-    display: inline;
   }
 
   .md\:flex {
