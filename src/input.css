@@ -36,6 +36,11 @@
         padding-left:clamp(0.65em,2vw,4em);
         background-color:hsl(12, 88%, 59%); 
         color:white;
+        box-shadow: 0rem 1rem 2.4rem -1.3rem hsl(12, 88%, 59%);
+        /* box-shadow: 0rem 0.7rem 1.5rem -1.3rem hsl(0, 0%, 0%); */
+    }
+    .button:hover {
+        opacity: 0.5; 
     }
     .nav-text-clamp {
         font-size: clamp(0.85rem, 1.4vw, 1rem); 
