@@ -21,7 +21,11 @@ module.exports = {
     fontFamily: {
       sans: ['"Be Vietnam Pro"'],
     },
-    extend: {},
+    extend: {
+      margin: {
+        22: "5.5rem",
+      },
+    },
   },
   plugins: [],
 };

@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer components { 
+    :root {
+        --clr-red:hsl(12, 88%, 59%);
+        --clr-red-100:hsl(13, 100%, 96%);
+        --clr-blue-200:hsl(228, 39%, 23%);
+    }
     .container   {
         max-width: 1440px;
         margin-inline: auto;
@@ -10,7 +15,12 @@
     }
     @media screen and (max-width:767px){
         .container {
-            padding: 1.25rem;
+            padding: 1rem;
+        }
+    }
+    @media screen and (min-width:767px){
+        p {
+            max-width: 45ch;
         }
     }
     .shadow-gradient[data-shadow="false"]::before{
@@ -31,18 +41,44 @@
         border-radius: 2em;
         /* padding: 0.65em; */
         padding-top: clamp(0.75em,1vw,1.5em );
-        padding-right:clamp(0.65em,1.8vw,4em) ;
+        padding-right:clamp(0.65em,1.4vw,4em) ;
         padding-bottom:clamp(0.75em,1vw,1.5em) ;
-        padding-left:clamp(0.65em,1.8vw,4em);
-        background-color:hsl(12, 88%, 59%); 
+        padding-left:clamp(0.65em,1.4vw,4em);
+        background-color:var(--clr-red); 
         color:white;
-        box-shadow: 0rem 1rem 2.4rem -1.3rem hsl(12, 88%, 59%);
+        box-shadow: 0rem 1rem 2.4rem -1.3rem var(--clr-red);
         /* box-shadow: 0rem 0.7rem 1.5rem -1.3rem hsl(0, 0%, 0%); */
     }
     .button:hover {
         opacity: 0.5; 
     }
     .nav-text-clamp {
-        font-size: clamp(0.80rem, 1.4vw, 1rem); 
+        font-size: clamp(0.85rem, 1.4vw, 1rem); 
     }
+    .number-list-block {
+        background:var(--clr-red-100);
+        color:var(--clr-blue-200);
+        padding: 0.5em 0em;
+        border-radius:4rem;
+        box-shadow: 100px 0 0 0px var(--clr-red-100);  
+    }
+    @media screen and (min-width:767px) {
+        .number-list-block{
+            background:none;
+            box-shadow: none;  
+        }
+    }
+    .number-list-main-text {
+        margin-left: 0.2rem;
+        font-size: clamp(0.80rem, 1.8vw, 1rem);
+        font-weight: bold;
+    }       
+    .number-list-number {
+        position: relative;
+        background:var(--clr-red);
+        color:white;
+        padding:0.6em 1.2em;
+        border-radius:1.5rem;
+      }
+
 }
