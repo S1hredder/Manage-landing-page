@@ -21,8 +21,11 @@
     }
     @media screen and (min-width:767px){
         p {
-            max-width: 45ch;
+            max-width: 40ch;
         }
+    }
+    .flow > * {
+        margin:1rem 0;
     }
     .shadow-gradient[data-shadow="false"]::before{
         content: "";
@@ -41,15 +44,11 @@
         display: flex;
         align-self: center;
         border-radius: 2em;
-        /* padding: 0.65em; */
-        padding-top: clamp(0.75em,1vw,1.5em );
-        padding-right:clamp(0.65em,1.4vw,4em) ;
-        padding-bottom:clamp(0.75em,1vw,1.5em) ;
-        padding-left:clamp(0.65em,1.4vw,4em);
+        padding: 0.8em 1.8em;
         background-color:var(--clr-red); 
         color:white;
-        box-shadow: 0rem 1rem 2.4rem -1.3rem var(--clr-red);
-        /* box-shadow: 0rem 0.7rem 1.5rem -1.3rem hsl(0, 0%, 0%); */
+        /* box-shadow: 0rem 1rem 2.4rem -1.3rem var(--clr-red); */
+        box-shadow: 0rem 0.7rem 1.5rem -0.6rem var(--clr-red);
     }
     .button:hover {
         opacity: 0.5; 
@@ -68,10 +67,10 @@
     .number-list-number{
         grid-area: 1 / 1 / 2 / 2;
         background: var(--clr-red);
-        border-radius: 1.5rem;
+        border-radius: 1.5em;
         text-align: center;
         color:white;
-        padding: 0.5rem 1rem;
+        padding: 0.5em 1em;
         z-index: 7;
         align-self: center;
     }
@@ -85,7 +84,7 @@
         .number-list-heading{
         background-color:var(--clr-red-100);
         box-shadow: 100px 0 0 0px var(--clr-red-100), -50px 0 0 0px var(--clr-red-100);  
-        padding: 0.5rem 0;
+        padding: 0.5em 0;
         z-index: 6;
     }
     }
