@@ -59,10 +59,10 @@
     .number-list-grid {
         display:grid;
         grid-template-columns: 1fr 6fr; 
-        grid-template-rows: 1fr 5fr;
-        column-gap:2rem;
-        row-gap:1rem;
-        /* margin-bottom:2rem; */
+        grid-template-rows: 1fr 6fr;
+        column-gap:1rem;
+        row-gap:0.5rem;
+        margin-bottom:1rem;
     }
     .number-list-number{
         grid-area: 1 / 1 / 2 / 2;
@@ -80,7 +80,19 @@
 
     }
     .number-list-text {
-        grid-area: 2 / 2 / 2 / 3; 
+        grid-area: 2 / 1 / 2 / 3; 
         color:var(--clr-blue-100);
+    }
+    @media screen and (min-width:767px) {
+        .number-list-text {
+               grid-area: 2 / 2 / 2 / 3; 
+        } 
+        .number-list-grid{ 
+            column-gap:2rem;
+        }
+        .number-list-number{
+            justify-self: center;
+            align-self: center;
+        }
     }
 }
